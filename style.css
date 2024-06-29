@@ -157,7 +157,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 10rem;
     height: 80vh;
 }
 
@@ -182,7 +182,7 @@ section {
 }
 
 .section__text__p2 {
-    color: rgb(143, 96, 253);
+    color: rgb(45, 45, 45);
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -191,6 +191,24 @@ section {
     color: rgb(52, 1, 115);
     font-size: 3rem;
     text-align: center;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 1.5s,
+        cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+/* Typing effects */
+@keyframes typing {
+    from { width: 0; }
+    
 }
 
 #social-container {
@@ -249,3 +267,70 @@ section {
 .btn-container {
     gap: 1rem;
 }
+
+
+/*ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-me-title {
+    color: rgb(52, 1, 115);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-pic {
+    border-radius: 2 rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 5rem;
+}
+
+.details-container {
+    padding:  1.5rem;
+    flex: 1;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(243, 234, 255) 100%);
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    color: rgb(5, 5, 119);
+    text-align: center;
+}
+
+
+.section-container {
+    gap: 4rem;
+    height: 75%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;  
+}
+
+.text-container {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
