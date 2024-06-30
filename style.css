@@ -432,12 +432,26 @@ article {
     height: 90%;
 }
 
-.project-title {
-    margin: 1rem;
-    color: blue;
+.projects-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size:  1.75rem;
+    
 }
 
+.project-title {
+    margin-top: 1rem;
+    color: rgb(0, 0, 89);
+}
+
+.pro-sub-title {
+    padding-bottom: 2rem;
+}
+
+
+
 .project-btn {
+    margin-top: 1rem;
     color: black;
     background-color: white;
     border-color: rgb(2, 2, 97);
