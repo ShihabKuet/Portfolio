@@ -395,3 +395,50 @@ article {
     text-align: center;
     font-size: 1.2rem;
 }
+
+/* PROJECT SECTIONS */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163,163,163);
+
+}
+
+.project-details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(243, 234, 255) 100%);
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    color: rgb(5, 5, 119);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 3rem;
+}
+
+.upper-project-img {
+    border-radius: 2rem;
+    width: 65%;
+    height: 60%;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: blue;
+}
+
+.project-btn {
+    color: black;
+    background-color: white;
+    border-color: rgb(2, 2, 97);
+}
