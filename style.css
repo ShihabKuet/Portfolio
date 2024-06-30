@@ -226,6 +226,11 @@ section {
     height: 3rem;
 }
 
+.small-icon {
+    cursor: pointer;
+    height: 1.5rem;
+}
+
 /* button */
 
 .btn-container {
@@ -400,6 +405,7 @@ article {
 
 #projects {
     position: relative;
+    height: 196vh;
 }
 
 .color-container {
@@ -455,4 +461,51 @@ article {
     color: black;
     background-color: white;
     border-color: rgb(2, 2, 97);
+}
+
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: large;
+}
+
+.contact-info-container a {
+    text-decoration: none;
+}
+
+.contact-icon {
+    cursor: default;
+    height: 2rem;
+}
+
+.email-icon {
+    cursor: default;
+    height: 2.5rem;
 }
