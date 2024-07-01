@@ -1,8 +1,209 @@
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
+    #mobile-nav {
+        display: flex;
+        height: 12vh;
+    }
+    
+    section {
+        margin: 0 2rem;
+    }
+
+    #profile {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    #show_up_img {
+        display: flex;
+    }
+
+    #show_bottom_img {
+        display: none;
+    }
+
+    .section__pic-container {
+        margin-top: 0;
+        padding-top: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .section__text {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+
+    .icon {
+        height: 2rem;
+    }
+
+    .btn {
+        width: 8rem;
+        padding: 0.5rem;
+    }
+
+    #about {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .about-me-title {
+        font-size: 2rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-containers {
+        height: auto;
+    }
+
+    .three-details-container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-details-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+    .three-details-container {
+        padding: 0;
+        height: 50%;
+        flex: 1;
+        background: linear-gradient(rgb(255, 255, 255) 0%, rgb(243, 234, 255) 100%);
+        border-radius: 2rem;
+        border: rgb(53,53,53) 0.1rem solid;
+        border-color: rgb(163,163,163);
+        color: rgb(5, 5, 119);
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .details-container {
+        width: 8rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .details-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-container {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .icon {
+        height: 2rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+    
+    #contact, footer {
+        margin-top: 60rem;
+        margin-bottom: 0;
+    }
+        
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containes, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 86vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
     #mobile-nav {
         display: flex;
+    }
+
+    #skills, .skill-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile, .section-container {
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+    .section__text {
+        height: 20%;
+        width: 100%;
+    }
+
+    .section__pic-container {
+        width: 175px;
+        height: 175px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
     }
 }

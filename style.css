@@ -154,6 +154,10 @@ section {
 
 /* Profile Sections */
 
+#show_up_img {
+    display: none;
+}
+
 #profile {
     display: flex;
     justify-content: center;
@@ -161,6 +165,7 @@ section {
     height: 80vh;
     margin-bottom: 8rem;
 }
+
 
 .section__pic-container {
     display: flex;
@@ -195,24 +200,9 @@ section {
     color: rgb(52, 1, 115);
     font-size: 3rem;
     text-align: center;
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 1.5s,
-        cursor .4s step-end infinite alternate;
 }
 
-/* cursor blinking */
-@keyframes cursor {
-    50% { border-color: transparent; }
-}
 
-/* Typing effects */
-@keyframes typing {
-    from { width: 0; }   
-}
 
 #social-container {
     display: flex;
@@ -408,10 +398,39 @@ article {
     height: 196vh;
 }
 
+.project-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 .color-container {
     border-color: rgb(163,163,163);
 
 }
+
+.three-details-container {
+    padding: 1rem;
+    width: 30%;
+    flex: 1;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(243, 234, 255) 100%);
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    color: rgb(5, 5, 119);
+    text-align: center;
+    font-size: 1.2rem;
+    /* For hover transition*/
+    z-index: 0;
+    transition: 0.2s all;
+}
+
+.three-details-container:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
 
 .project-details-container {
     padding: 1.5rem;
@@ -424,7 +443,16 @@ article {
     text-align: center;
     font-size: 1.2rem;
     margin: 3rem;
+    z-index: 0;
+    transition: 0.2s all;
 }
+
+.project-details-container:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
 
 .upper-project-img {
     border-radius: 2rem;
@@ -508,4 +536,41 @@ article {
 .email-icon {
     cursor: default;
     height: 2.5rem;
+}
+
+/*Footer */
+
+footer {
+    justify-content: space-around;
+    height: 20vh;
+    border-radius: 0rem;
+    margin: 0;
+    background: linear-gradient(rgb(120, 216, 254),rgb(255,255,255));
+
+    
+}
+
+footer nav {
+    height: 13vh;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.footer-links a{
+    color: rgb(0, 0, 98);
+    font-weight: 300;
+}
+
+.footer-links a:hover {
+    transition: all 0.1s ease-in-out;
+    font-weight: 400;
+}
+
+footer p {
+    text-align: center;
 }
